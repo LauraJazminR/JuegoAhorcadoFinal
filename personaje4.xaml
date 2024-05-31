@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AhorcdoTEAM1.personaje4"
+             Title="Ahorcado"
+             BackgroundImageSource="fondito.png">
+
+
+    <VerticalStackLayout>
+
+
+        <StackLayout
+	Orientation="Horizontal"
+	Margin="60,25,0,0">
+
+            <Label 
+			x:Name="NivelLabel"
+			Text="Nivel:"
+			TextColor="Black"
+			FontSize="15"/>
+
+        </StackLayout>
+
+
+
+        <StackLayout
+       Orientation="Horizontal"
+       Margin="60,5">
+
+
+
+            <Label 
+			x:Name="puntajeLabel"
+			Text="Puntaje:"
+			TextColor="Black"
+			FontSize="15"/>
+
+
+        </StackLayout>
+
+
+
+
+        <StackLayout
+       Orientation="Horizontal"
+       Margin="60,5">
+
+
+
+            <Label 
+			Text="Pagina personaje 4"
+			TextColor="Black"
+			FontSize="15"/>
+
+
+
+        </StackLayout>
+
+
+
+
+        <StackLayout
+       Orientation="Horizontal"
+       Margin="60,5">
+
+
+
+            <Label 
+			Text="Tiempo restante:"
+			TextColor="Black"
+			FontSize="15"/>
+
+
+            <Label 
+			x:Name="tiempoLabel"
+			TextColor="Black"
+			FontSize="15"/>
+
+
+        </StackLayout>
+
+        <StackLayout
+                Orientation="Horizontal"
+                Margin="60,5">
+
+
+            <Entry x:Name="numero1"
+                   BackgroundColor="#6dcfc0"
+                   FontSize="25"
+                   TextColor="Black"/>
+
+            <Label Text="X"
+                   Margin="5,16"
+                   BackgroundColor="Transparent"
+                   FontSize="20"
+                   TextColor="Black"/>
+
+            <Entry x:Name="numero2" 
+                   BackgroundColor="#6dcfc0"
+                   FontSize="25"
+                   TextColor="Black"/>
+
+            <Label Text="="
+                   Margin="5,12"
+                   BackgroundColor="Transparent"
+                   FontSize="27"
+                   TextColor="Black"/>
+
+
+            <Entry x:Name="resultado"
+                   BackgroundColor="#6dcfc0"
+                   FontSize="25"
+                   Completed="Button2_Click"
+                   TextColor="Black"
+                   Keyboard="Numeric"/>
+
+        </StackLayout>
+
+        <StackLayout Margin="90,10"
+               Orientation="Horizontal">
+
+            <Button Text="Comenzar" 
+               Clicked="Button1_Click" 
+               x:Name="button1" 
+               Margin="5,10" 
+               HeightRequest="45" 
+               WidthRequest="125"
+               BackgroundColor="#2e9686"/>
+
+
+        </StackLayout>
+
+        <StackLayout Padding="20">
+
+            <Image x:Name="imagen" 
+                Source="base.png" 
+                Margin="25,10"
+                WidthRequest="300"
+                HeightRequest="300"/>
+
+        </StackLayout>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
